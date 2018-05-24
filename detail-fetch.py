@@ -6,3 +6,6 @@ api = twitter.Api(consumer_key='x**************************',
     access_token_secret='c*************************************************')
 
 print(api.VerifyCredentials())
+# get list of friends
+users = api.GetFriends()
+print([u.name for u in users])
